@@ -1,12 +1,12 @@
 package modelos;
 
-
 import java.util.*;
 
-/**
- * 
- */
 public class Rectangulo {
+	
+    private int base;
+    private int altura;
+    
 
     /**
      * Default constructor
@@ -15,17 +15,8 @@ public class Rectangulo {
         this.base = 1;
         this.altura = 1;
     }
-
-    /**
-     * 
-     */
-    private int base;
-
-    /**
-     * 
-     */
-    private int altura;
-
+    
+    
     /**
      * Método constructor que te pide el valor de todos los atributos
      * @param base 
@@ -49,7 +40,6 @@ public class Rectangulo {
      * @return
      */
     public int getBase() {
-        // TODO implement here
         return this.base;
     }
 
@@ -58,7 +48,6 @@ public class Rectangulo {
      * @param altura
      */
     public void setAltura(int altura) {
-     // TODO implement here
     	this.altura = altura;
     }
 
@@ -74,22 +63,17 @@ public class Rectangulo {
 
     /**
      * Método para calcular el área del rectángulo
-     * @param base 
-     * @param altura 
      * @return
      */
-    public int calcularArea() {
-        
+    public int getArea() {
         return base*altura;
     }
 
     /**
-     * @param base 
-     * @param altura 
+     * Método para calcular el perimetro del rectángulo
      * @return
      */
-    public int calcularPerimetro() {
-        // TODO implement here
+    public int getPerimetro() {
         return (base*2 + altura*2);
     }
 
