@@ -57,7 +57,6 @@ public class Rectangulo {
      * @return
      */
     public int getAltura() {
-        
         return altura;
     }
 
