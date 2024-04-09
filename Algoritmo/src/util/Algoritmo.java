@@ -17,4 +17,20 @@ public abstract class Algoritmo {
 
 		return result;
 	}
+	
+	/**
+	 * Devuelve el factorial del numero especificado
+	 * 
+	 * @param numero  el nunmero del que queremos calcular el factorial
+	 * @return	el factorial del numero especificado
+	 */
+	public static int factorial(int numero) {
+		int result = 1;
+		
+		for(int i = numero; i > 0; i--) {
+			result *= i;
+		}
+		
+		return result;
+	}
 }
