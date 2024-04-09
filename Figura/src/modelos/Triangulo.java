@@ -11,7 +11,7 @@ public class Triangulo {
     /**
      * Constructor por defecto
      */
-    public void Triangulo() {
+    public Triangulo() {
         this.base = 1;
         this.altura = 1;
     }
@@ -21,7 +21,7 @@ public class Triangulo {
      * @param base 
      * @param altura
      */
-    public void Triangulo(int base, int altura) {
+    public Triangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
@@ -36,7 +36,7 @@ public class Triangulo {
 
     /**
      * Método para modificar la altura
-     * @param altura
+     * @param altura	
      */
     public void setAltura(int altura) {
         this.altura = altura;
