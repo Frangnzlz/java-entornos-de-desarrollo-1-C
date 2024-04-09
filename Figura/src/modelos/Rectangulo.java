@@ -1,8 +1,10 @@
 package modelos;
-
-import java.util.*;
-
-public class Rectangulo {
+/**
+ *Clase Rectangulo. Permite crear rectangulo y calcular su area y perimetro
+ * 
+ *  @author Fran
+ */
+public class Rectangulo extends Figura{
 	
     private int base;
     private int altura;
@@ -18,9 +20,10 @@ public class Rectangulo {
     
     
     /**
-     * Método constructor que te pide el valor de todos los atributos
-     * @param base 
-     * @param altura
+     * Constructor que crea un rectangulo con la base y la altura especificadas en metro
+     * 
+     * @param la base del rectangulo en metros
+     * @param la altura del rectangulo en metros
      */
     public Rectangulo(int base, int altura) {
     	this.base = base;
@@ -59,21 +62,22 @@ public class Rectangulo {
     public int getAltura() {
         return altura;
     }
-
     /**
-     * Método para calcular el área del rectángulo
-     * @return
+     * @see modelos.Figura#area()
      */
-    public int getArea() {
-        return base*altura;
-    }
+	@Override
+	public double area() {
+		
+		return this.base*this.altura;
+	}
 
-    /**
-     * Método para calcular el perimetro del rectángulo
-     * @return
-     */
-    public int getPerimetro() {
-        return (base*2 + altura*2);
-    }
+	/**
+	 *@see modelos.Figura#perimetro() 
+	 */
+	@Override
+	public double perimetro() {
+		return  2*base + 2*altura;
+	}
+
 
 }

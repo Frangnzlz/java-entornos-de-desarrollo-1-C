@@ -11,7 +11,7 @@ public class mainRectangulo {
 		
 		
 		
-		int area = rectangulo.getArea();
+		double area = rectangulo.area();
 		
 		System.out.println(rectangulo.getAltura());
 		
@@ -19,7 +19,7 @@ public class mainRectangulo {
 		
 		System.out.println(area);
 		
-		System.out.println(rectangulo.getPerimetro());
+		System.out.println(rectangulo.perimetro());
 		
 	}
 }
