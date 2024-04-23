@@ -8,7 +8,12 @@ public abstract class Algoritmo {
 	 * @param numero el numero del que queremos calcular el sumatorio
 	 * @return el sumatorio del numero especificado
 	 */
-	public static int sumatorio(int numero) {
+	public static int sumatorio(int numero){
+		
+		if(numero <0) {
+			throw new IllegalArgumentException("El numero debe ser igual o superior a 0");
+		}
+		
 		int result = 0;
 		
 		for(int i = numero; i > 0 ; i--) {
